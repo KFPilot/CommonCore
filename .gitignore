@@ -1,0 +1,19 @@
+#Exclude all.
+/*
+
+#Necessary git files. 
+!.gitignore
+!README.md
+!LICENSE
+
+#KFTurbo's source code packages.
+!CommonCore/
+
+#Important config files.
+!System
+/System/*
+/System/**/*
+!/System/CommonCore.ini
+
+#Build automation.
+!RecompileTurbo.py
