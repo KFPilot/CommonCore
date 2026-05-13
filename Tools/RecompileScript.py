@@ -30,7 +30,7 @@ BuildType = EBuildType.FULL
 CommonCoreFiles = ["CommonCore.u"]
 
 #Files needed for Common Core deployments.
-TurboStagingFiles = [ "CommonCore.ucl" ]
+CommonCoreStagingFiles = [ "CommonCore.ucl" ]
 
 StageFiles = Arguments.stagefiles
 VerboseUCC = Arguments.verboseUCC
@@ -138,11 +138,11 @@ def CopyCommonCoreFilesToTarget(Destination):
     for FileName in CommonCoreFiles:
         FilePath = SystemPath.joinpath(FileName)
         shutil.copy2(FilePath, Destination)
-    for StagingFileName in TurboStagingFiles:
+    for StagingFileName in CommonCoreStagingFiles:
         FilePath = SystemPath.joinpath(StagingFileName)
         shutil.copy2(FilePath, Destination)
 
-def CopyTurboFilesToDeployments():
+def CopyCommonCoreFilesToDeployments():
     try:
         CopyCommonCoreFilesToTarget(GitHubStagingPath)
         if ExtraStagingPath != None:
@@ -167,7 +167,7 @@ def PerformCompile():
     
     if StageFiles and FoundAllFiles:
         PrintTask("Staging files...")
-        CopyTurboFilesToDeployments()
+        CopyCommonCoreFilesToDeployments()
         print("... staging files finished.")
 
 PerformCompile()
