@@ -1,6 +1,6 @@
-//Killing Floor Turbo KFTurboMasterServerUplink
+//Common Core CommonCoreMut
 //Distributed under the terms of the MIT License.
-//For more information see https://github.com/KFPilot/KFTurbo.
+//For more information see https://github.com/KFPilot/CommonCore.
 class CommonCoreMut extends Mutator
 	config(CommonCore);
 

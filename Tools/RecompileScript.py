@@ -1,8 +1,7 @@
-#Killing Floor Turbo RecompileTurbo.py
-#Simple script used to compile KFTurbo.
-#Makes working in VSCode on KFTurbo easier.
+#Common Core RecompileScript.py
+#Simple script used to compile Common Core.
 #Distributed under the terms of the MIT License.
-#For more information see https://github.com/KFPilot/KFTurbo.
+#For more information see https://github.com/KFPilot/CommonCore.
 import argparse
 from enum import Enum
 import pathlib
