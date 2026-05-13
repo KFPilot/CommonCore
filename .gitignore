@@ -16,4 +16,4 @@
 !/System/CommonCore.ini
 
 #Build automation.
-!RecompileTurbo.py
+!RecompileScript.py
