@@ -15,5 +15,7 @@
 /System/**/*
 !/System/CommonCore.ini
 
-#Build automation.
-!RecompileScript.py
+#Miscellaneous tools.
+!Tools
+/Tools/*
+!/Tools/RecompileScript.py
